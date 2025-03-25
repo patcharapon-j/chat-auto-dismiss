@@ -1,0 +1,12 @@
+{
+  "name": "chat-auto-dismiss",
+  "version": "1.0.0",
+  "description": "A Foundry VTT module that automatically dismisses chat messages in the Stream interface after a configurable time period.",
+  "scripts": {
+    "build": "echo 'No build step required'",
+    "package": "node ./scripts/package.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "private": true
+}

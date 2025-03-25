@@ -1,0 +1,78 @@
+/* Chat Auto Dismiss Styles */
+
+/* Base styling for auto-dismissing messages */
+.chat-message.auto-dismiss {
+  transition: opacity 1s ease, transform 1s ease, scale 1s ease;
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Timer bar styling - only shown when show-timer-bar class is present */
+.chat-message.auto-dismiss.show-timer-bar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  animation: countdown linear forwards;
+  animation-duration: var(--dismiss-timeout, 10s);
+}
+
+/* Countdown animation */
+@keyframes countdown {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+/* Ensure the chat log has proper overflow handling */
+#chat-log.auto-dismiss-enabled {
+  overflow: hidden;
+}
+
+/* Animation Presets */
+
+/* Slide Animation (Default) */
+.chat-message.auto-dismiss.animation-slide.dismissing.direction-right {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.chat-message.auto-dismiss.animation-slide.dismissing.direction-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.chat-message.auto-dismiss.animation-slide.dismissing.direction-up {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.chat-message.auto-dismiss.animation-slide.dismissing.direction-down {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+/* Fade Animation */
+.chat-message.auto-dismiss.animation-fade.dismissing {
+  opacity: 0;
+}
+
+/* Shrink Animation */
+.chat-message.auto-dismiss.animation-shrink.dismissing {
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+/* No Animation */
+.chat-message.auto-dismiss.animation-none.dismissing {
+  transition: none;
+  display: none;
+}

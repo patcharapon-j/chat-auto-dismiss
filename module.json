@@ -1,0 +1,33 @@
+{
+  "id": "chat-auto-dismiss",
+  "title": "Chat Auto Dismiss",
+  "description": "Automatically dismisses chat messages after a configurable time period.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "authors": [
+    {
+      "name": "Your Name",
+      "email": "your.email@example.com",
+      "url": "https://yourwebsite.com"
+    }
+  ],
+  "esmodules": [
+    "scripts/chat-auto-dismiss.js"
+  ],
+  "styles": [
+    "styles/chat-auto-dismiss.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "url": "https://github.com/yourusername/chat-auto-dismiss",
+  "manifest": "https://github.com/yourusername/chat-auto-dismiss/releases/latest/download/module.json",
+  "download": "https://github.com/yourusername/chat-auto-dismiss/releases/latest/download/chat-auto-dismiss.zip"
+}

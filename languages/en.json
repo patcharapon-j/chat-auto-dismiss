@@ -1,0 +1,34 @@
+{
+  "chat-auto-dismiss": {
+    "settings": {
+      "dismissTimeout": {
+        "name": "Dismiss Timeout",
+        "hint": "Time in seconds before chat messages are automatically dismissed (0 to disable)."
+      },
+      "showTimerBar": {
+        "name": "Show Timer Bar",
+        "hint": "Display a countdown bar at the bottom of chat messages."
+      },
+      "animationPreset": {
+        "name": "Animation Preset",
+        "hint": "Choose the animation style for dismissing messages.",
+        "choices": {
+          "slide": "Slide Out",
+          "fade": "Fade Out",
+          "shrink": "Shrink",
+          "none": "No Animation"
+        }
+      },
+      "animationDirection": {
+        "name": "Animation Direction",
+        "hint": "Choose the direction for slide animations.",
+        "choices": {
+          "right": "Right",
+          "left": "Left",
+          "up": "Up",
+          "down": "Down"
+        }
+      }
+    }
+  }
+}
