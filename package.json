@@ -6,7 +6,7 @@
     "build": "echo 'No build step required'",
     "package": "node ./scripts/package.js"
   },
-  "author": "Your Name",
+  "author": "Gluniverse",
   "license": "MIT",
   "private": true
 }
