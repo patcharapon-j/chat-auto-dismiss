@@ -9,9 +9,7 @@
   },
   "authors": [
     {
-      "name": "Your Name",
-      "email": "your.email@example.com",
-      "url": "https://yourwebsite.com"
+      "name": "FrostNoxia"
     }
   ],
   "esmodules": [
@@ -27,7 +25,7 @@
       "path": "languages/en.json"
     }
   ],
-  "url": "https://github.com/yourusername/chat-auto-dismiss",
-  "manifest": "https://github.com/yourusername/chat-auto-dismiss/releases/latest/download/module.json",
-  "download": "https://github.com/yourusername/chat-auto-dismiss/releases/latest/download/chat-auto-dismiss.zip"
+  "url": "https://github.com/patcharapon-j/chat-auto-dismiss",
+  "manifest": "https://github.com/patcharapon-j/chat-auto-dismiss/releases/latest/download/module.json",
+  "download": "https://github.com/patcharapon-j/chat-auto-dismiss/releases/latest/download/chat-auto-dismiss.zip"
 }
